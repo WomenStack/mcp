@@ -26,10 +26,26 @@ mcp/
 ├── mcp_client.py    # MCP client, responsible for LLM communication and tool invocation
 ├── mcp_server.py    # MCP server, provides computational tool services
 ├── README.md        # Chinese documentation
-└── README_EN.md     # English documentation
+├── README_EN.md     # English documentation
+└── requirements.txt # Project dependencies file
 ```
 
-## Installation
+## Environment Setup
+
+### Using Conda to Create Virtual Environment (Recommended)
+
+```bash
+# Create virtual environment
+conda create -n mcp python=3.11 -y
+
+# Activate environment
+conda activate mcp
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Using pip directly
 
 ```bash
 pip install click aiohttp pydantic

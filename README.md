@@ -26,10 +26,26 @@ mcp/
 ├── mcp_client.py    # MCP客户端，负责与LLM通信和工具调用
 ├── mcp_server.py    # MCP服务端，提供计算工具服务
 ├── README.md        # 中文说明文档
-└── README_EN.md     # 英文说明文档
+├── README_EN.md     # 英文说明文档
+└── requirements.txt # 项目依赖文件
 ```
 
-## 安装依赖
+## 环境配置
+
+### 使用Conda创建虚拟环境（推荐）
+
+```bash
+# 创建虚拟环境
+conda create -n mcp python=3.11 -y
+
+# 激活环境
+conda activate mcp
+
+# 安装依赖
+pip install -r requirements.txt
+```
+
+### 使用pip直接安装
 
 ```bash
 pip install click aiohttp pydantic
