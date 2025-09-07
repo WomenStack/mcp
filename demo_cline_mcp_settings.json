@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "calculator": {
+      "command": "python3",
+      "args": ["your_path/cline_caculator_mcp_server.py"]
+    }
+  }
+}
